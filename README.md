@@ -1,7 +1,7 @@
 gulp-renvy
 ============
 
-A configurable gulp plugin very inspired by gulp-replace that replace text based upon an enviroment object 
+A configurable gulp plugin very inspired by [gulp-replace](https://www.npmjs.org/package/gulp-replace "gulp-replace") that replace text based upon an enviroment object.
 
 ## Install
 
@@ -12,8 +12,9 @@ npm install gulp-renvy
 ```
 
 ## How it works
-In your gulpfile.js import gulp-renvy and call it in a pipe ```logwarn()```. If you want, you can extend the strings to be checked by passing an array of strings as argument to logwarn ,something like ```logwarn(["console.debug","$log.info","DEBUG"])```
+In your gulpfile.js import gulp-renvy and call it in a pipe ```renvy(<placeholder object>,<enviroment:String>)```. For how to define a placeholder object look the example.
 
+### Example
 in the gulpfile.js
 ```javascript
 var renvy = require('gulp-renvy');
@@ -38,5 +39,3 @@ gulp.task('html', function(){
 ## TODO
 
 - tests
-- clean up the code
-
