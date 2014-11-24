@@ -19,11 +19,11 @@ in the gulpfile.js
 var renvy = require('gulp-renvy');
 
 var placeholder = {
-    'BASE_HREF': {'mc':'/mc/travel/',   'production':'/rejseforsikring/',   'stage':'/rejseforsikring/',   'id': '/~ivan/travel/',         'ms': '/travel/'},
-    'RAVEN_DEV': {'mc':true,            'production':false,                 'stage':true,                  'id':true,                      'ms': true},
-    'API_PATH_P': {'mc':'/api-dev',      'production':'/api',                'stage':'/api-dev',            'id':'/~ivan/travel/api-dev',   'ms':'/api-dev'},
+    'BASE_HREF': {'production':'/rejseforsikring/',   'stage':'/rejseforsikring/'},
+    'RAVEN_DEV': {'production':false,                 'stage':true},
+    'API_PATH_P': {'production':'/api',               'stage':'/api-dev'},
 };
-// mc production stage are the enviroments and BASE_HREF RAVEN_DEV API_PATH_P are the placeholders that you can place in your code
+// production and stage are the enviroments; BASE_HREF, RAVEN_DEV and API_PATH_P are the placeholders that you can place in your html code
 
 gulp.task('html', function(){
     return gulp.src(html)
