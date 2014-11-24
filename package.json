@@ -1,6 +1,6 @@
 {
   "name": "gulp-renvy",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A configurable gulp plugin very inspired by gulp-replace that replace enviroment placeholders",
   "main": "index.js",
   "scripts": {
