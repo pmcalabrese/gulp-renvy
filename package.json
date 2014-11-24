@@ -21,5 +21,10 @@
   "bugs": {
     "url": "https://github.com/pmcalabrese/gulp-renvy/issues"
   },
-  "homepage": "https://github.com/pmcalabrese/gulp-renvy"
+  "homepage": "https://github.com/pmcalabrese/gulp-renvy",
+  "dependencies": {
+    "event-stream": "^3.1.7",
+    "replacestream": "^1.0.2",
+    "stream": "0.0.1"
+  }
 }
